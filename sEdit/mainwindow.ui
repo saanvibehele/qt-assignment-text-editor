@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>595</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QPushButton" name="pushButton_open">
+          <property name="text">
+           <string>open</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_resume">
+          <property name="text">
+           <string>About Me</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_save">
+          <property name="text">
+           <string>save</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QTextEdit" name="textEdit_area"/>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::RightToLeft</enum>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Three bars (click for options)</string>
+    </property>
+    <addaction name="actionNew_Window"/>
+    <addaction name="actionsave_as"/>
+    <addaction name="separator"/>
+    <addaction name="actionfind"/>
+    <addaction name="actionfind_and_replace"/>
+    <addaction name="actionclear_highlight"/>
+    <addaction name="actiongo_to_line"/>
+    <addaction name="separator"/>
+    <addaction name="actionviewfullscreen"/>
+    <addaction name="actionexitfullscreen"/>
+    <addaction name="separator"/>
+    <addaction name="actionpreferences"/>
+    <addaction name="separator"/>
+    <addaction name="actionkeyboard_shortcuts"/>
+    <addaction name="actionhelp"/>
+    <addaction name="actionabout_sEdit"/>
+   </widget>
+   <widget class="QMenu" name="menuText_Formatter">
+    <property name="title">
+     <string>Text formatter</string>
+    </property>
+    <addaction name="actionbold"/>
+    <addaction name="actionsuper_script"/>
+    <addaction name="actionsub_script"/>
+    <addaction name="actionremove_super_subscript"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menuText_Formatter"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionNew_Window">
+   <property name="text">
+    <string>new file</string>
+   </property>
+  </action>
+  <action name="actionsave_as">
+   <property name="text">
+    <string>save as</string>
+   </property>
+  </action>
+  <action name="actionfind">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>find</string>
+   </property>
+  </action>
+  <action name="actionfind_and_replace">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>find and replace</string>
+   </property>
+  </action>
+  <action name="actionclear_highlight">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>clear highlight</string>
+   </property>
+  </action>
+  <action name="actiongo_to_line">
+   <property name="text">
+    <string>go to line</string>
+   </property>
+  </action>
+  <action name="actionviewfullscreen">
+   <property name="text">
+    <string>view full screen</string>
+   </property>
+  </action>
+  <action name="actionexitfullscreen">
+   <property name="text">
+    <string>exit full screen</string>
+   </property>
+  </action>
+  <action name="actionpreferences">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>preferences</string>
+   </property>
+  </action>
+  <action name="actionkeyboard_shortcuts">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>keyboard shortcuts</string>
+   </property>
+  </action>
+  <action name="actionhelp">
+   <property name="text">
+    <string>help</string>
+   </property>
+  </action>
+  <action name="actionabout_sEdit">
+   <property name="text">
+    <string>about sEdit</string>
+   </property>
+  </action>
+  <action name="actionbold">
+   <property name="text">
+    <string>bold/unbold</string>
+   </property>
+  </action>
+  <action name="actionsuper_script">
+   <property name="text">
+    <string>super script</string>
+   </property>
+  </action>
+  <action name="actionsub_script">
+   <property name="text">
+    <string>sub script</string>
+   </property>
+  </action>
+  <action name="actionremove_super_subscript">
+   <property name="text">
+    <string>remove super/subscript</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
