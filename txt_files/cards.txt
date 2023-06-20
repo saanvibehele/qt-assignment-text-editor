@@ -1,0 +1,4 @@
+joker card
+ace card
+queen
+king
