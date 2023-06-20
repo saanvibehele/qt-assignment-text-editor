@@ -18,10 +18,10 @@ sEdit is a text editor with simple functionalities. It is built using QT Creator
 ## How to Run the code
 1. Download the zip file
 2. Extract it
-3. Open the folder: sEdit
+3. Open the folder: build-sEdit-Desktop-Debug
 4. Simply double click the 'sEdit' executable file              
    or                       
-   Open the sEdit folder in terminal and run the following code:            
+   Open the 'build-sEdit-Desktop-Debug' folder in terminal and run the following code:            
    $ ./sEdit              
 5. Play with the app and use all the functionalities of text files.
 
